@@ -889,6 +889,7 @@ const ProductionDetailsModal = ({
   onClose,
 }) => {
   return (
+<<<<<<< HEAD
     <div
       className="fixed inset-0 z-50 overflow-y-auto bg-slate-950/50 p-3 sm:p-4"
       onClick={onClose}
@@ -900,6 +901,13 @@ const ProductionDetailsModal = ({
       >
                 {/* Header */}       {" "}
         <div className="sticky top-0 z-10 flex items-center justify-between gap-3 border-b border-slate-200 bg-white px-4 py-4 sm:px-6 sm:py-5">
+=======
+    <div className="fixed inset-0 z-50 flex items-center justify-center bg-slate-950/40 p-4">
+           {" "}
+      <div className="w-full max-w-2xl overflow-hidden rounded-2xl bg-white shadow-2xl">
+                {/* Header */}       {" "}
+        <div className="flex items-center justify-between border-b border-slate-200 px-6 py-5">
+>>>>>>> origin/main
                    {" "}
           <div>
                        {" "}
@@ -915,18 +923,29 @@ const ProductionDetailsModal = ({
                    {" "}
           <button
             onClick={onClose}
+<<<<<<< HEAD
             aria-label="Close production details"
             title="Close"
             className="shrink-0 rounded-lg p-2 text-slate-500 hover:bg-slate-100 hover:text-slate-900 focus:outline-none focus:ring-2 focus:ring-blue-500"
+=======
+            className="rounded-lg p-2 text-slate-400 hover:bg-slate-100 hover:text-slate-700"
+>>>>>>> origin/main
           >
                         <X className="h-5 w-5" />         {" "}
           </button>
                  {" "}
         </div>
                 {/* Product Summary */}       {" "}
+<<<<<<< HEAD
         <div className="grid grid-cols-1 gap-3 border-b border-slate-200 p-4 sm:grid-cols-2 sm:gap-4 sm:p-6 lg:grid-cols-3">
                     <InfoBox label="Shade" value={item.shade} />
                     <InfoBox label="Pack Size" value={item.packSize} />         {" "}
+=======
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 border-b border-slate-200 p-6">
+                    <InfoBox label="Shade" value={item.shade} />
+                    <InfoBox label="Pack Size" value={item.packSize} />
+                   {" "}
+>>>>>>> origin/main
           <InfoBox
             label="Total Quantity"
             value={`${item.totalQuantity} Units`}
@@ -934,7 +953,11 @@ const ProductionDetailsModal = ({
                  {" "}
         </div>
                 {/* Dealers */}       {" "}
+<<<<<<< HEAD
         <div className="p-4 sm:p-6">
+=======
+        <div className="p-6">
+>>>>>>> origin/main
                    {" "}
           <h3 className="mb-4 font-semibold text-slate-900">
                         Contributing Orders          {" "}
@@ -972,7 +995,11 @@ const ProductionDetailsModal = ({
                  {" "}
         </div>
                 {/* Footer */}       {" "}
+<<<<<<< HEAD
         <div className="sticky bottom-0 flex justify-end border-t border-slate-200 bg-slate-50 px-4 py-3 sm:px-6 sm:py-4">
+=======
+        <div className="flex justify-end border-t border-slate-200 bg-slate-50 px-6 py-4">
+>>>>>>> origin/main
                    {" "}
           <button
             onClick={onClose}

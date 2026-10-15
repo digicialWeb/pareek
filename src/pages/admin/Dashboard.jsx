@@ -1,5 +1,8 @@
+<<<<<<< HEAD
 import { useNavigate } from "react-router-dom";
 
+=======
+>>>>>>> origin/main
 import {
   ShoppingCart,
   Clock3,
@@ -19,7 +22,10 @@ const stats = [
     change: "+12.5%",
     icon: ShoppingCart,
     description: "vs last month",
+<<<<<<< HEAD
     path: "/admin/orders",
+=======
+>>>>>>> origin/main
   },
   {
     title: "Pending",
@@ -27,7 +33,10 @@ const stats = [
     change: "+4",
     icon: Clock3,
     description: "needs attention",
+<<<<<<< HEAD
     path: "/admin/orders?status=PENDING",
+=======
+>>>>>>> origin/main
   },
   {
     title: "In Production",
@@ -35,7 +44,10 @@ const stats = [
     change: "+8",
     icon: Factory,
     description: "currently active",
+<<<<<<< HEAD
     path: "/admin/orders?status=IN_PRODUCTION",
+=======
+>>>>>>> origin/main
   },
   {
     title: "Ready",
@@ -43,7 +55,10 @@ const stats = [
     change: "+3",
     icon: CheckCircle2,
     description: "ready for dispatch",
+<<<<<<< HEAD
     path: "/admin/orders?status=READY",
+=======
+>>>>>>> origin/main
   },
   {
     title: "Dispatched",
@@ -51,7 +66,10 @@ const stats = [
     change: "+18",
     icon: Truck,
     description: "this month",
+<<<<<<< HEAD
     path: "/admin/orders?status=DISPATCHED",
+=======
+>>>>>>> origin/main
   },
   {
     title: "Dealers",
@@ -59,7 +77,10 @@ const stats = [
     change: "+6",
     icon: Users,
     description: "active dealers",
+<<<<<<< HEAD
     path: "/admin/dealers",
+=======
+>>>>>>> origin/main
   },
   {
     title: "Salespersons",
@@ -67,7 +88,10 @@ const stats = [
     change: "+2",
     icon: UserRound,
     description: "active members",
+<<<<<<< HEAD
     path: "/admin/salespersons",
+=======
+>>>>>>> origin/main
   },
 ];
 
@@ -141,8 +165,11 @@ const statusStyles = {
 };
 
 const Dashboard = () => {
+<<<<<<< HEAD
   const navigate = useNavigate();
 
+=======
+>>>>>>> origin/main
   return (
     <div className="mx-auto max-w-[1600px] space-y-8">
       {/* Header */}
@@ -161,7 +188,11 @@ const Dashboard = () => {
           </p>
         </div>
 
+<<<<<<< HEAD
         <button onClick={() => navigate("/admin/orders")} className="inline-flex items-center justify-center gap-2 rounded-xl bg-slate-900 px-4 py-2.5 text-sm font-semibold text-white transition hover:bg-slate-800">
+=======
+        <button className="inline-flex items-center justify-center gap-2 rounded-xl bg-slate-900 px-4 py-2.5 text-sm font-semibold text-white transition hover:bg-slate-800">
+>>>>>>> origin/main
           View All Orders
           <ArrowUpRight size={16} />
         </button>
@@ -173,12 +204,18 @@ const Dashboard = () => {
           const Icon = stat.icon;
 
           return (
+<<<<<<< HEAD
             <button
               type="button"
               key={stat.title}
               onClick={() => navigate(stat.path)}
               aria-label={`View ${stat.title}`}
               className="group w-full cursor-pointer rounded-2xl border border-slate-200 bg-white p-4 text-left shadow-sm transition duration-200 hover:-translate-y-0.5 hover:border-slate-300 hover:shadow-md focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2"
+=======
+            <div
+              key={stat.title}
+              className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm"
+>>>>>>> origin/main
             >
               <div className="flex items-start justify-between gap-2">
                 <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-slate-100 text-slate-700">
@@ -201,7 +238,11 @@ const Dashboard = () => {
               <p className="mt-0.5 text-[11px] text-slate-400">
                 {stat.description}
               </p>
+<<<<<<< HEAD
             </button>
+=======
+            </div>
+>>>>>>> origin/main
           );
         })}
       </div>
@@ -218,7 +259,11 @@ const Dashboard = () => {
               </p>
             </div>
 
+<<<<<<< HEAD
             <button onClick={() => navigate("/admin/orders")} className="text-sm font-semibold text-slate-700 hover:text-slate-900">
+=======
+            <button className="text-sm font-semibold text-slate-700 hover:text-slate-900">
+>>>>>>> origin/main
               View all
             </button>
           </div>
@@ -312,7 +357,11 @@ const Dashboard = () => {
               </p>
             </div>
 
+<<<<<<< HEAD
             <button onClick={() => navigate("/admin/orders")} className="text-sm font-semibold text-slate-700 hover:text-slate-900">
+=======
+            <button className="text-sm font-semibold text-slate-700 hover:text-slate-900">
+>>>>>>> origin/main
               View all
             </button>
           </div>
